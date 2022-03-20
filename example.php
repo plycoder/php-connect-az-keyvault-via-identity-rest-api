@@ -14,6 +14,5 @@ echo $pubkey;
 echo "<br/>fetch key:<br/>";
 $privatekey=$azvault->getKey("privatekey");
 
-echo json_encode($privatekey);
-//echo $privatekey->type."<br/>"; // e.g. "RSA"
-//echo $privatekey->n."<br/>";    // prints base64 encoded RSA modulus
+echo $privatekey->key->type."<br/>"; // e.g. "RSA"
+echo $privatekey->key->n."<br/>";    // prints base64 encoded RSA modulus
