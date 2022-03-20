@@ -14,5 +14,5 @@ echo $pubkey;
 echo "<br/>fetch key:<br/>";
 $privatekey=$azvault->getKey("privatekey");
 
-echo $privatekey->key->type."<br/>"; // e.g. "RSA"
+echo $privatekey->key->kty."<br/>"; // e.g. "RSA"
 echo $privatekey->key->n."<br/>";    // prints base64 encoded RSA modulus
